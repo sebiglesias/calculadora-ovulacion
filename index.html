@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Ovulación y Días Fértiles — Calendario Menstrual</title>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f43f5e">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="description" content="Calculá con precisión tus días más fértiles, tu fecha exacta de ovulación pico, el inicio de tu próximo período y el momento ideal para hacerte un test de embarazo.">
+  <meta name="keywords" content="calculadora de ovulacion, dias fertiles calculadora, calendario ovulacion, cuando ovulo, como saber mis dias fertiles, calculadora periodo menstrual">
+  <link rel="canonical" href="https://sebiglesias.com.ar/calculadora-ovulacion/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de Ovulación y Días Fértiles — Calendario Menstrual">
+  <meta property="og:description" content="Conocé tu ventana fértil y el día de mayor probabilidad de embarazo según la duración de tu ciclo menstrual.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/calculadora-ovulacion/">
+  <meta property="og:site_name" content="Calculadora de Ovulación">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de Ovulación y Días Fértiles">
+  <meta name="twitter:description" content="Descubrí tu ventana fértil, ovulación y predicción del próximo ciclo.">
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora de Ovulación y Días Fértiles",
+    "url": "https://sebiglesias.com.ar/calculadora-ovulacion/",
+    "description": "Herramienta online para calcular la ventana fértil, el día de ovulación y la predicción del ciclo menstrual.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Sebastián Iglesias",
+      "url": "https://sebiglesias.com.ar"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuántos días dura la ventana fértil?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La ventana fértil abarca aproximadamente 6 días: los 5 días anteriores a la ovulación y el día mismo de la ovulación. Los espermatozoides pueden sobrevivir hasta 5 días en el tracto reproductor femenino, mientras que el óvulo tiene una viabilidad de entre 12 y 24 horas tras ser liberado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se calcula el día de ovulación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En un ciclo menstrual regular, la ovulación ocurre aproximadamente 14 días antes del inicio del siguiente período menstrual. Por ejemplo, en un ciclo de 28 días, la ovulación se produce alrededor del día 14. En un ciclo de 32 días, ocurre cerca del día 18."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuáles son los síntomas físicos de la ovulación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los signos más comunes son el cambio en el moco cervical (más elástico, transparente y fluido, similar a la clara de huevo cruda), un leve dolor punzante en un lado de la pelvis (conocido como Mittelschmerz) y un aumento sutil de 0.3 a 0.5 °C en la temperatura corporal basal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuándo conviene realizar un test de embarazo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para evitar falsos negativos, se recomienda realizar el test de orina a partir del primer día de retraso menstrual (aproximadamente 14 días después de la ovulación). Un test en sangre cuantitativo (subunidad beta hCG) es concluyente a partir de los 10 a 12 días post-ovulación."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <a href="https://sebiglesias.com.ar/" class="back-link">
+        ← Volver a sebiglesias.com.ar
+      </a>
+      <span style="font-size: 0.8rem; color: #64748b;">Ciclo Fisiológico Estándar</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="header">
+      <div class="badge-tag">🌸 Fertilidad y Salud Femenina</div>
+      <h1 class="title">Calculadora de Ovulación y Días Fértiles</h1>
+      <p class="subtitle">Ingresá la fecha de tu última menstruación y la duración habitual de tu ciclo para conocer tus días de máxima fertilidad.</p>
+    </section>
+
+    <!-- Inputs Card -->
+    <section class="card" aria-label="Datos del ciclo">
+      <div class="grid-2">
+        <div class="form-group">
+          <label for="input-fum" class="form-label">Primer día de tu última menstruación (FUM)</label>
+          <input type="date" id="input-fum" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Duración promedio de tu ciclo menstrual</label>
+          <div class="cycle-stepper">
+            <button type="button" id="btn-cycle-minus" class="step-btn" aria-label="Restar día">−</button>
+            <div id="cycle-length-val" class="cycle-display">28 días</div>
+            <button type="button" id="btn-cycle-plus" class="step-btn" aria-label="Sumar día">+</button>
+          </div>
+          <span style="font-size: 0.78rem; color: #64748b; margin-top: 0.25rem; display: block;">Se cuenta desde el primer día de sangrado hasta el día previo al siguiente.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Results Hero -->
+    <section class="result-hero" aria-live="polite">
+      <div class="hero-pill">🌿 VENTANA FÉRTIL ÓPTIMA</div>
+      <div class="hero-window-title">Días con mayor probabilidad de concepción:</div>
+      <div id="hero-fertile-range" class="hero-window-dates">Cargando fechas...</div>
+      <div id="hero-peak-day" class="hero-peak-ovulation">🎯 Ovulación Pico: Calculando...</div>
+
+      <div class="hero-meta-grid">
+        <div class="meta-box">
+          <span class="label">Próximo Período</span>
+          <span id="res-next-period" class="value">-</span>
+        </div>
+        <div class="meta-box">
+          <span class="label">Test de Embarazo sugerido</span>
+          <span id="res-test-date" class="value">-</span>
+        </div>
+        <div class="meta-box">
+          <span class="label">Parto estimado si concibes</span>
+          <span id="res-fpp" class="value">-</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Monthly Calendar Matrix -->
+    <section class="card">
+      <div class="cal-header">
+        <h2 id="cal-month-title" class="cal-month-title">Calendario del Mes</h2>
+        <span style="font-size: 0.8rem; color: #64748b;">Mes de ovulación</span>
+      </div>
+
+      <div class="cal-grid">
+        <div class="cal-day-name">Dom</div>
+        <div class="cal-day-name">Lun</div>
+        <div class="cal-day-name">Mar</div>
+        <div class="cal-day-name">Mié</div>
+        <div class="cal-day-name">Jue</div>
+        <div class="cal-day-name">Vie</div>
+        <div class="cal-day-name">Sáb</div>
+      </div>
+
+      <div id="cal-days-grid" class="cal-grid" style="margin-top: 4px;">
+        <!-- Day cells dynamically rendered -->
+      </div>
+
+      <div class="cal-legend">
+        <div class="legend-item">
+          <span class="legend-swatch" style="background: #ffe4e6; border: 1px solid #f43f5e;"></span>
+          <span>Menstruación</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-swatch" style="background: #d1fae5; border: 1px solid #10b981;"></span>
+          <span>Ventana Fértil</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-swatch" style="background: #059669;"></span>
+          <span>Día de Ovulación pico</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-swatch" style="border: 2px dashed #8b5cf6;"></span>
+          <span>Día para Test</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next 3 Cycles Projection -->
+    <section class="card">
+      <h2 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.35rem;">
+        Proyección de los Próximos 3 Ciclos
+      </h2>
+      <p style="font-size: 0.85rem; color: #64748b;">
+        Ideal para planificar viajes, compromisos o búsqueda de embarazo:
+      </p>
+      <div id="next-cycles-container" class="cycles-cards-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="faq-title">Preguntas Frecuentes sobre la Ovulación</h2>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Cuántos días dura la ventana fértil?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          La ventana fértil abarca aproximadamente 6 días: los 5 días anteriores a la ovulación y el día mismo de la ovulación. Los espermatozoides pueden sobrevivir hasta 5 días en las trompas de Falopio y el cuello uterino, esperando al óvulo. El óvulo, una vez expulsado del folículo ovárico, solo sobrevive de 12 a 24 horas si no es fertilizado.
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Cómo reconocer el moco cervical fértil?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          A medida que se acerca la ovulación, los estrógenos hacen que las secreciones del cuello uterino se vuelvan transparentes, resbaladizas y muy elásticas (con textura similar a la clara de huevo cruda). Este tipo de moco nutre y facilita el avance de los espermatozoides hacia el óvulo.
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Qué pasa si mis ciclos son irregulares?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          Si la duración de tu ciclo varía más de 4 a 5 días de un mes a otro, las calculadoras basadas en calendario ofrecen una aproximación. Para mayor precisión se recomienda complementar con tests de ovulación en orina (tiras reactivas de hormona LH) o seguimiento ecográfico ginecológico.
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button type="button" class="faq-question">
+          <span>¿Sirve este método como anticonceptivo natural?</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          No se recomienda confiar exclusivamente en calendarios matemáticos como método anticonceptivo primario, ya que el estrés, cambios hormonales o viajes pueden adelantar o retrasar la ovulación imprevistamente. Utilizá métodos de barrera o consultá con tu ginecólogo/a.
+        </div>
+      </article>
+    </section>
+
+    <!-- Cross Sell Microapps -->
+    <section class="cross-sell">
+      <h3>Otras herramientas útiles de Sebastián Iglesias</h3>
+      <div class="cross-grid">
+        <a href="https://sebiglesias.com.ar/embarazo/" class="cross-card">
+          <span class="cross-icon">🤰</span>
+          <div class="cross-info">
+            <strong>Calculadora de Embarazo</strong>
+            <span>Semanas y fecha de parto (FPP)</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/calculadora-calorias/" class="cross-card">
+          <span class="cross-icon">🔥</span>
+          <div class="cross-info">
+            <strong>Calculadora de Calorías</strong>
+            <span>TMB, déficit y macros</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/cuota-alimentaria/" class="cross-card">
+          <span class="cross-icon">👶</span>
+          <div class="cross-info">
+            <strong>Cuota Alimentaria</strong>
+            <span>Canasta de crianza INDEC</span>
+          </div>
+        </a>
+        <a href="https://sebiglesias.com.ar/cuando-cobro/" class="cross-card">
+          <span class="cross-icon">📅</span>
+          <div class="cross-info">
+            <strong>¿Cuándo Cobro ANSES?</strong>
+            <span>AUH y Asignación por Embarazo</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Calculadora de Ovulación — Desarrollado por <a href="https://sebiglesias.com.ar">Sebastián Iglesias</a>.</p>
+    <p style="margin-top: 0.25rem; font-size: 0.75rem;">Herramienta puramente orientativa con fines informativos. No reemplaza el asesoramiento médico profesional.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

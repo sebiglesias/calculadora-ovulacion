@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sebiglesias.com.ar/calculadora-ovulacion/sitemap.xml

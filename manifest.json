@@ -1,0 +1,17 @@
+{
+  "name": "Calculadora de Ovulación y Días Fértiles — Calendario Menstrual",
+  "short_name": "Calculadora Ovulación",
+  "description": "Calculá tu ventana fértil, tu día exacto de ovulación pico, fecha del próximo período y cuándo hacer el test de embarazo.",
+  "start_url": "/calculadora-ovulacion/",
+  "display": "standalone",
+  "background_color": "#e11d48",
+  "theme_color": "#f43f5e",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
